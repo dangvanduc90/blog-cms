@@ -81,7 +81,7 @@ class User extends Authenticatable
 
     public function getRole($role_name)
     {
-        return SELF::role()->whereName($role_name)->exists();
+        return self::role()->whereName($role_name)->exists();
     }
 
     public function comments()
